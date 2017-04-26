@@ -1,279 +1,595 @@
-<!DOCTYPE html>
-<html class="mac" lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/main.css">
-  <link rel="icon" sizes="any" mask="" href="https://assets-cdn.github.com/pinned-octocat.svg">
-  <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
-  <script type="text/javascript" async="" id="gauges-tracker" data-site-id="55cb48ad92c6ac72a8010dbd" data-track-path="https://track.gaug.es/track.gif" src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/track.js"></script><script async="" src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/analytics.js"></script><script src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/jquery.js" charset="utf-8"></script>
-  <!--[if lte IE 8]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <script src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/os.js" charset="utf-8"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Email Template</title>
+    <meta name="viewport" content="width=device-width">
+    <style type="text/css">
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            font-size: 17px;
+			line-height:26px;
+            color: #58595b;
+        }
 
-  ga('create', 'UA-3769691-62', 'auto');
-  ga('send', 'pageview');
+        a {
+            border: none;
+            text-decoration: none;
+        }
 
-  $(document).on('click', '[data-download]', function(e) {
-    ga('send', 'event', 'button', 'download', $(this).attr('data-download'));
-  });
-</script>
+        a img {
+            border: none;
+            border-style: none;
+        }
 
-  
-  <!-- Begin Jekyll SEO tag v2.2.0 -->
-<title>GitHub Desktop | Simple collaboration from your desktop</title>
-<meta property="og:title" content="GitHub Desktop">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="Simple collaboration from your desktop">
-<meta property="og:description" content="Simple collaboration from your desktop">
-<link rel="canonical" href="https://desktop.github.com/">
-<meta property="og:url" content="https://desktop.github.com/">
-<meta property="og:site_name" content="GitHub Desktop">
-<script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "WebSite",
-"name": "GitHub Desktop",
-"headline": "GitHub Desktop",
-"description": "Simple collaboration from your desktop",
-"url": "https://desktop.github.com/"}</script>
-<!-- End Jekyll SEO tag -->
+        img {
+            display: block;
+            border-style: none;
+        }
 
+        p {
+			margin: 0;
+        }
+
+        p strong {
+            font-weight: bold;
+        }
+
+        p a {
+            text-decoration: underline;
+        }
+
+        a {
+			text-decoration:underline;
+            color: #23d3fd;
+		}
+		.web_view a,
+        .webversion,
+        .webversion a {
+			text-decoration: none;
+            color: #58595b;
+		}
+        .unsubscribe,
+        .unsubscribe a {
+            text-decoration: none;
+            color: #58595b;
+        }
+
+        #Table_01 {
+            background: #FFFFFF;
+        }
+
+        #banner img {
+            max-width: 600px!important;
+            width: 100%!important;
+        }
+
+        .social {
+            margin: 10px 0 20px 0;
+        }
+
+        .social img {
+            margin: 0 5px;
+        }
+
+        .footer {
+            color: #ffffff;
+        }
+
+        .copyright {
+            color: #ffffff;
+        }
+
+        .copyright a {
+            color: #ffffff;
+        }
+
+        .web_view {
+            color: #58595b;
+            text-decoration: underline;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        ul {
+            font-size: 17px;
+			line-height:26px;
+			padding-left:15px;
+        }
+
+        .email {
+            text-align: right;
+        }
+
+        .webview {
+            text-align: right;
+        }
+		/*FOOTER*/
+		.footer .text a,
+		.footer .text {
+			color: #58595b;
+			font-family: Helvetica, Arial,sans-serif;
+			font-size: 12px;
+			line-height:18px;
+			font-weight: normal;
+		}
+		/*IMAGE*/
+		#banner img,
+		.feature-image {
+			height:auto;
+		}
+		/*IN TOUCH*/
+		.intouch-right img {
+			display:inline;
+		}
+		.intouch-right {
+			text-align:right;
+		}
+    </style>
+    <style type="text/css" data-premailer="ignore">
+        @media only screen and (min-width: 200px) and (max-width: 480px),
+        only screen and (min-device-width: 200px) and (max-device-width: 480px) {
+            #Table_01 {
+                width: 100% !important;
+                max-width: 480px !important;
+            }
+            #banner img {
+                width: 100% !important;
+            }
+            /*FEATURE IMAGE*/
+            .feature-image-outer {
+                width: 100%!important;
+                display: block!important;
+            }
+            .feature-image {
+                width: 100%!important;
+                display: block;
+                clear: both;
+            }
+			.img-col2 {
+				padding-top:14px;
+			}
+			/*IN TOUCH*/
+			.intouch-right,
+			.intouch-left {
+				width: 100%!important;
+                display: block;
+                clear: both;
+				text-align:center;
+			}
+			.intouch-right {
+				padding-top:20px;
+			}
+			.intouch-right img {
+				display:inline;
+			}
+			/*FOOTER*/
+			.copyright img {
+				max-width:80%;
+			}
+			/*IDEA*/
+			.idea-image {
+				width:90%;
+				display:block;
+			}
+			.idea-image img {
+				margin-right:0px!important;
+				width:auto!important;
+			}
+			.idea-text {
+				width:90%;
+				display:block;
+			}
+        }
+    </style>
 </head>
 
-  <body>
-    <header>
-  <div class="container">
-    <div class="logo">
-      <a href="https://desktop.github.com/"><img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/desktop-logo.png" alt="GitHub Desktop" width="145" height="24"></a>
-    </div>
-    <div class="nav">
-      <ul class="nav">
-  <li><a href="https://desktop.github.com/" class="current">Overview</a></li>
-  <li data-for-os="windows"><a href="https://desktop.github.com/release-notes/windows/">Release Notes</a></li>
-  <li data-for-os="mac"><a href="https://desktop.github.com/release-notes/mac/">Release Notes</a></li>
-  <li>|</li>
-  <li><a href="https://help.github.com/desktop">Help</a></li>
-</ul>
-
-    </div>
-  </div>
-</header>
-
-    <section class="heroine">
-  <div class="container">
-    <h1>Simple collaboration from your&nbsp;desktop</h1>
-    <div class="download-container">
-      <div class="left">
-        <p>
-          GitHub Desktop is a seamless way to contribute to projects on
-          <a href="https://github.com/">GitHub</a> and
-          <a href="https://enterprise.github.com/">GitHub Enterprise</a>.
-        </p>
-        <p class="availability">
-          Available for <a href="#" data-action="switch-os" data-os="mac">Mac</a>
-          and <a href="#" data-action="switch-os" data-os="windows">Windows</a>
-        </p>
-      </div>
-      <div class="right">
-        <a href="https://central.github.com/mac/latest" class="download" data-download="mac" data-for-os="mac">
-          Download GitHub Desktop
-          <span>OS X 10.9 or later</span>
-        </a>
-        <a href="https://github-windows.s3.amazonaws.com/GitHubSetup.exe" class="download" data-download="windows" data-for-os="windows">
-          Download GitHub Desktop
-          <span>Windows 7 or later</span>
-        </a>
-        <p class="eula">
-          By clicking the Download button you agree to the
-          <a href="https://desktop.github.com/eula/">End-User License Agreement</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="screen">
-    <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/main.png" alt="GitHub Desktop for Mac" data-for-os="mac">
-    <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/main_002.png" alt="GitHub Desktop for Windows" data-for-os="windows">
-  </div>
-</section>
-<section class="workflow">
-  <div class="container">
-    <h2>Your GitHub workflow in one native&nbsp;app</h2>
-    <div class="work">
-      <div class="step">
-        <span class="mega-octicon octicon-cloud-download"></span>
-        Clone repositories
-      </div>
-      <div class="next">
-        <span class="mega-octicon octicon-arrow-right"></span>
-      </div>
-      <div class="step">
-        <span class="mega-octicon octicon-git-branch"></span>
-        Create branches
-      </div>
-      <div class="next">
-        <span class="mega-octicon octicon-arrow-right"></span>
-      </div>
-      <div class="step">
-        <span class="mega-octicon octicon-git-commit"></span>
-        Commit changes
-      </div>
-      <div class="next">
-        <span class="mega-octicon octicon-arrow-right"></span>
-      </div>
-      <div class="step">
-        <span class="mega-octicon octicon-git-pull-request"></span>
-        Share code
-      </div>
-    </div>
-  </div>
-</section>
-<section class="feature start screen-right">
-  <div class="container">
-    <div class="description">
-      <h2>Start a project</h2>
-      <p>
-        You’ll find all the projects you’re working on listed in the sidebar.
-        If you’re starting a new project, use the repository drop down menu to
-        create a new repository or clone an existing one directly from
-        GitHub.com.
-      </p>
-    </div>
-    <div class="screen">
-      <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/start_002.png" data-for-os="mac" alt="Cloning a repository">
-      <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/start.png" data-for-os="windows" alt="Cloning a repository">
-    </div>
-  </div>
-</section>
-<section class="feature branch screen-left">
-  <div class="container">
-    <div class="description">
-      <h2>Branch off</h2>
-      <p>
-        Branches are essential to proposing changes and reviewing code on
-        GitHub—and they’re always available in the top left corner of the
-        repository view. Just select the current branch to switch branches or
-        create a new one.
-      </p>
-    </div>
-    <div class="screen">
-      <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/branch.png" data-for-os="mac" alt="Create a branch">
-      <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/branch_002.png" data-for-os="windows" alt="Create a branch">
-    </div>
-  </div>
-</section>
-<section class="craft center-feature">
-  <div class="container">
-    <div class="screen">
-      <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/craft_002.png" data-for-os="mac" alt="Craft a commit">
-      <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/craft.png" data-for-os="windows" alt="Craft a commit">
-    </div>
-    <div class="description">
-      <h2>Craft the perfect&nbsp;commit</h2>
-      <p>
-        View a diff of your uncommitted changes, and form the perfect commit
-        by selecting the files—or even the specific lines—that make up a
-        change. Enter the summary and description, then commit.
-      </p>
-    </div>
-  </div>
-</section>
-<section class="history">
-  <div class="container">
-    <div class="description">
-      <h2>See your history</h2>
-      <p>
-        Visualize your changes and commits in the comparison graph. You can
-        select commits on the graph to navigate through the history of your
-        local branches.
-      </p>
-    </div>
-  </div>
-  <div class="screen">
-    <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/history.png" data-for-os="mac" alt="Craft a commit">
-    <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/history_002.png" data-for-os="windows" alt="Craft a commit">
-  </div>
-</section>
-<section class="feature pull-request screen-right">
-  <div class="container">
-    <div class="description">
-      <h2>Create a pull&nbsp;request</h2>
-      <p>
-        Once you’re happy with your commits, you can open a pull request for
-        review and discussion without leaving GitHub Desktop or touching the
-        command line.
-      </p>
-      <h2>Merge and deploy</h2>
-      <p>
-        Browse commits on local and remote branches to quickly and clearly see
-        what changes still need to be merged. You can also merge your code to
-        the master branch for deployment right from the app.
-      </p>
-    </div>
-    <div class="screen">
-      <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/pr_002.png" data-for-os="mac" alt="Create a pull request">
-      <img src="GitHub%20Desktop%20%7C%20Simple%20collaboration%20from%20your%20desktop_files/pr.png" data-for-os="windows" alt="Create a pull request">
-    </div>
-  </div>
-</section>
-<section class="cta">
-  <div class="container">
-    <h1>Start contributing, natively</h1>
-    <a href="https://central.github.com/mac/latest" class="download" data-download="mac" data-for-os="mac">
-      Download GitHub Desktop
-      <span>OS X 10.9 or later</span>
-    </a>
-    <a href="https://github-windows.s3.amazonaws.com/GitHubSetup.exe" class="download" data-download="windows" data-for-os="windows">
-      Download GitHub Desktop
-      <span>Windows 7 or later</span>
-    </a>
-    <p data-for-os="windows">
-      Also available for
-      <a href="#" data-action="switch-os" data-os="mac">Mac</a>
-    </p>
-    <p data-for-os="mac">
-      Also available for
-      <a href="#" data-action="switch-os" data-os="windows">Windows</a>
-    </p>
-  </div>
-</section>
-
-    <footer>
-  <a href="https://github.com/">
-    <span class="mega-octicon octicon-mark-github"></span>
-  </a>
-  <ul class="nav">
-  <li><a href="https://desktop.github.com/" class="current">Overview</a></li>
-  <li data-for-os="windows"><a href="https://desktop.github.com/release-notes/windows/">Release Notes</a></li>
-  <li data-for-os="mac"><a href="https://desktop.github.com/release-notes/mac/">Release Notes</a></li>
-  <li>|</li>
-  <li><a href="https://help.github.com/desktop">Help</a></li>
-</ul>
-
-  <p class="copyright">© 2017 GitHub, Inc. All rights reserved.</p>
-</footer>
-<script type="text/javascript">
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '55cb48ad92c6ac72a8010dbd');
-    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
-    t.src = 'https://track.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
-</script>
-
-
-  
-
-</body></html>
+<body bgcolor="#eff3f4" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: #eff3f4;">
+        <tr bgcolor="#eff3f4">
+            <td width="600" height="50" align="center" valign="middle">
+            	<table width="90%" border="0" align="center" class="web_view">
+                	<tr>
+                    	<td align="center" style="font-size:11px;"><webversion>Having trouble viewing this email?</webversion></td>
+					</tr>
+				</table>
+			</td>
+        </tr>
+        <tr>
+            <td align="center">
+                <table border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01" style="width:600px; font-family: Helvetica, Arial, sans-serif; background-color:#FFFFFF;">
+                    <!--HEADER-->
+                    <tr>
+                        <td height="77" align="center">
+                            <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="left" valign="middle" class="templateColumnContainer">
+                                        <a href="http://www.winningmedia.com.au/"><img style="display:block;" class="logo-img" src="./image/logo.png" width="154"></a>
+                                    </td>
+                                    <td valign="middle" align="left" class="templateColumnContainer" style="min-width:100px; padding:0px 0px 0px 10px;">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="color:#8E8E8E; font-size:13px;">
+                                            <tr>
+                                                <td valign="middle" class="email" style="">
+                                                	<fblike><img alt="facebook" src="./image/icon-fb.png" style="display:inline-block; border:0px;" width="19" height="18"></fblike>
+                                                    <tweet><img alt="twitter" src="./image/icon-tw.png" style="display:inline-block; border:0px;" width="18" height="18"></tweet>
+                                                    <a href="https://plus.google.com/115841863011008557128/about" style="text-decoration:none;" title="googleplus"><img alt="googleplus" src="./image/icon-gl.png" style="display:inline-block; border:0px;" width="19" height="18"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--END HEADER-->
+                    <!--CONTENT-->
+                    <repeater>
+                    <!--BANNER-->
+                    <layout label="Project Banner">
+                        <tr>
+                            <td id="banner" align="left" valign="top"><img style="display:block; max-width:600px; width:100%;" editable="true" src="./image/banner.png" width="600" alt="" class="feature-image"></td>
+                        </tr>
+                    </layout>
+                    <!--END BANNER-->
+                    <!--END TEXT-->
+                    <layout label='Intro'>
+                    <tr>
+                        <td align="center" valign="middle" style="color:#58595b; font-size:17px; line-height:26px; text-align:left;">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="30" align="center" valign="middle"></td>
+                                </tr>
+                                <!--INNER TEXT-->
+                                <tr>
+                                    <td align="left" valign="middle" style="font-size:22px; line-height:30px; padding:0px 0px 10px 0px; margin:0px; color:#c5d2d7;font-weight:bold;">
+                                    	<multiline label="Personalisation">Hi [firstname,fallback=], Lorem ipsum dolor sit amet, ne eum affert homero aeterno.</multiline>
+                                    </td>
+                                </tr>
+                                <!--END INNER TEXT-->
+                            </table>
+                        </td>
+                    </tr>
+                    </layout>
+                    <layout label='Intro Text'>
+                    <tr>
+                        <td align="center" valign="middle" style="color:#58595b; font-size:17px; line-height:26px; text-align:left;">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="left" valign="middle" style="padding:0px 0px 0px 0px; margin:0px;">
+                                        <multiline label="Intro Text: Content">Lorem ipsum dolor sit amet, scripta rationibus ne ius. Eu has habeo zril patrioque, ei eos solum accumsan. Ex lorem minim ponderum sed. Mea fugit aliquid scriptorem ne. Clita pericula referrentur ea his, nec at verterem voluptatibus, agam viris facilisi ei his. Libris detracto scriptorem per ad, id debet similique. (50 words)</multiline>
+                                        <multiline label="CTA Button">
+                                            <div><!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.winningmedia.com.au/" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#00ADEE">
+                                            <w:anchorlock/>
+                                            <center>
+                                            <![endif]-->
+                                                <a href="http://www.winningmedia.com.au/"
+                                            style="background-color:#00ADEE;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;margin-top: 10px;">Learn more</a>
+                                            <!--[if mso]>
+                                            </center>
+                                            </v:roundrect>
+                                            <![endif]--></div>
+                                        </multiline>
+                                  </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </layout>
+                    <layout label='Blue Box CTA'>
+                    <tr><td style="padding-bottom:36px;"></td></tr>
+                    <tr>
+                        <td align="center" valign="middle" style="color:#58595b; font-size:17px; line-height:26px; text-align:left; background:#23d3fd; padding:30px 0px 35px 0px;">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="left" valign="middle" style="padding:0px 0px 0px 0px; margin:0px 0px 0px 0px; font-size:18px; line-height:28px; font-weight:bold;">
+                                        <multiline label="Blue Box CTA: Text">Lorem ipsum dolor sit amet, ne eum affert homero aeterno. Eum vidit tempor constituam no. Ei tation corpora assueverit per, ea mei ullum novum ea. (25 words)</multiline>
+                                        <multiline label="CTA Button">
+                                            <div><!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.winningmedia.com.au/" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#00ADEE">
+                                            <w:anchorlock/>
+                                            <center>
+                                            <![endif]-->
+                                                <a href="http://www.winningmedia.com.au/"
+                                            style="background-color:#00ADEE;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;margin-top: 10px;">Learn more</a>
+                                            <!--[if mso]>
+                                            </center>
+                                            </v:roundrect>
+                                            <![endif]--></div>
+                                        </multiline>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </layout>
+                    <layout label='Blue Box CTA with Image'>
+                    <tr><td style="padding-bottom:36px;"></td></tr>
+                    <tr>
+                        <td align="center" valign="middle" style="color:#58595b; font-size:17px; line-height:26px; text-align:left; background:#23d3fd; padding:30px 0px 35px 0px;">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="left" valign="middle" style="padding:0px 0px 0px 0px; margin:0px 0px 0px 0px; font-size:18px; line-height:28px; font-weight:bold;">
+                                        <multiline label="Blue Box CTA with Image: Text">Lorem ipsum dolor sit amet, ne eum affert homero aeterno. Eum vidit tempor constituam no. Ei tation corpora assueverit per, ea mei ullum novum ea. (25 words)</multiline>
+                                        <multiline label="CTA Button">
+                                            <div><!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.winningmedia.com.au/" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#00ADEE">
+                                            <w:anchorlock/>
+                                            <center>
+                                            <![endif]-->
+                                                <a href="http://www.winningmedia.com.au/"
+                                            style="background-color:#00ADEE;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;margin-top: 10px;">Learn more</a>
+                                            <!--[if mso]>
+                                            </center>
+                                            </v:roundrect>
+                                            <![endif]--></div>
+                                        </multiline>
+                                    </td>
+                                    <td align="left" valign="middle" style="padding:0px; margin:0px;">
+                                        <img width="189" style="width:189px;border:0px;" editable="true" src="./image/wm-inspiration1.jpg" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </layout>
+                    <!--END TEXT-->
+                    <!--LAYOUT-->
+                    <layout label='Layout'>
+                    <tr><td style="padding-top:30px;"></td></tr>
+                    <tr>
+                        <td align="center" valign="middle" style="">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="left" valign="middle" style="padding:0px 0px 20px 0px; margin:0px;border-top:1px solid #dfe6e8;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" style="padding:0px 0px 0px 0px; margin:0px;width:95%;">
+                            <table width="95%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center" valign="top" style="">
+                                        <img style="display:block; max-width:569px; width:100%;" editable="true" src="./image/wm-mailchimp.jpg" alt="" width="569" class="feature-image">
+                                    </td>
+                                </tr>
+                            </table>
+                    	</td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" style="">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="left" style="font-size:28px; line-height:30px; padding:30px 0px 15px 0px; margin:0px; font-weight:bold;">
+                                        <multiline label="Title">Heading Title</multiline>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:0px 0px 10px 0px; margin:0px;">
+                                        <multiline label="Content">Lorem ipsum dolor sit amet, ne eum affert homero aeterno. Eum vidit tempor constituam no. Ei tation corpora assueverit per, ea mei ullum novum ea. (25 words)</multiline>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <multiline label="CTA Button">
+                                            <div><!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.winningmedia.com.au/" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#00ADEE">
+                                            <w:anchorlock/>
+                                            <center>
+                                            <![endif]-->
+                                                <a href="http://www.winningmedia.com.au/"
+                                            style="background-color:#00ADEE;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Learn more</a>
+                                            <!--[if mso]>
+                                            </center>
+                                            </v:roundrect>
+                                            <![endif]--></div>
+                                        </multiline>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </layout>
+                    <!--END LAYOUT-->
+                    <!--FEATURE IMAGE-->
+                    <layout label='Project Layout'>
+                    <tr><td style="padding-top:30px;"></td></tr>
+                    <tr>
+                        <td align="center" valign="middle" style="">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="left" valign="middle" style="padding:0px 0px 20px 0px; margin:0px;border-top:1px solid #dfe6e8;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" style="padding:0px 0px 0px 0px; margin:0px;width:95%;">
+                            <table width="95%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center" valign="top" style="">
+                                        <img style="display:block; max-width:569px; width:100%;" editable="true" src="./image/wm-mailchimp.jpg" alt="" width="569" class="feature-image">
+                                    </td>
+                                </tr>
+                            </table>
+                    	</td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" style="">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="left" style="font-size:28px; line-height:30px; padding:30px 0px 15px 0px; margin:0px; font-weight:bold;">
+                                        <multiline label="Project: Title">Heading Title</multiline>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:0px 0px 10px 0px; margin:0px;">
+                                        <multiline label="Project: Text Area 1">Lorem ipsum dolor sit amet, ne eum affert homero aeterno. Eum vidit tempor constituam no. Ei tation corpora assueverit per, ea mei ullum novum ea. (25 words)</multiline>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:10px 0px 0px 0px; margin:0px; font-size:18px; line-height:28px; font-weight:bold;">
+                                        <multiline label="Project: Text Area 2">Heading title with additional Lorem ipsum dolor sit amet:</multiline>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:0px 0px 10px 0px; margin:0px;">
+                                        <multiline label="Project: List">Lorem ipsum dolor sit amet, scripta rationibus ne ius. Eu has habeo zril patrioque, ei eos solum accumsan. Ex lorem minim ponderum sed. Mea fugit aliquid scriptorem ne. Clita pericula referrentur ea his, nec at verterem voluptatibus, agam viris facilisi ei his. Libris detracto scriptorem per ad, id debet similique. (50 words)</multiline>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:10px 0px 0px 0px; margin:0px; font-size:18px; line-height:28px; font-weight:bold;">
+                                        <multiline label="Project: CTA Text">Lorem ipsum dolor sit amet, ne eum affert homero aeterno.</multiline>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <multiline label="CTA Button">
+                                            <div><!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.winningmedia.com.au/" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#00ADEE">
+                                            <w:anchorlock/>
+                                            <center>
+                                            <![endif]-->
+                                                <a href="http://www.winningmedia.com.au/"
+                                            style="background-color:#00ADEE;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;margin-top: 10px;">Learn more</a>
+                                            <!--[if mso]>
+                                            </center>
+                                            </v:roundrect>
+                                            <![endif]--></div>
+                                        </multiline>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </layout>
+                    <!--END FEATURE IMAGE-->
+                    <layout label='Refer Message'>
+                    <tr>
+                        <td align="center" valign="middle" style="color:#58595b; font-size:17px; line-height:26px; text-align:left;padding:40px 0px 0px 0px;">
+                            <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <!--INNER TEXT-->
+                                <tr>
+                                    <td align="left" valign="middle" style="border-top:1px solid #dfe6e8;font-size:15px; line-height:30px; padding:5px 0px 20px 0px; margin:0px;color:#c5d2d7;font-weight:bold;"></td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" style="font-size:22px; line-height:30px; padding:0px 0px 0px 0px; margin:0px;color:#00adee;font-weight:bold;">
+                                        <multiline label="Latest Project: Title">We work with amazing clients and thrive on creating unique digital solutions that deliver measurable results. If you're dreaming up the next 'big thing' or know someone that is, get in touch, we'd love to chat about it.</multiline>
+                                        <multiline label="CTA Button">
+                                            <div><!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.winningmedia.com.au/" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#00ADEE">
+                                            <w:anchorlock/>
+                                            <center>
+                                            <![endif]-->
+                                                <a href="http://www.winningmedia.com.au/"
+                                            style="background-color:#00ADEE;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;margin-top: 10px;">Tell us more</a>
+                                            <!--[if mso]>
+                                            </center>
+                                            </v:roundrect>
+                                            <![endif]--></div>
+                                        </multiline>
+                                    </td>
+                                </tr>
+                                <!--END INNER TEXT-->
+                            </table>
+                        </td>
+                    </tr>
+                    </layout>
+                    <!--FEATURE IMAGE-->
+                    <layout label='Other Projects'>
+                    <tr>
+                        <td align="center" valign="middle" style="padding:40px 0px 0px 0px; margin:0px;">
+                            <!--FEATURE IMAGE ITEM-->
+                            <table border="0" cellspacing="0" cellpadding="0" align="center" width="100%">
+                                <tr>
+                                    <td class="feature-image-outer" align="center" width="300">
+                                        <img width="300" style="width:300px;border:0px;" class="feature-image" editable="true" src="./image/wm-project1.jpg" alt="">
+                                    </td>
+                                    <td class="feature-image-outer" align="center" width="300">
+                                        <img width="300" style="width:300px;border:0px;" class="feature-image" editable="true" src="./image/wm-project2.jpg" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--END FEATURE IMAGE ITEM-->
+                        </td>
+                    </tr>
+                    </layout>
+                    <!--END FEATURE IMAGE-->
+                    <!--INNER TEXT-->
+                    <layout label='In Touch'>
+                    <tr>
+                        <td height="161" align="center" valign="middle" bgcolor="#2d3034">
+                            <table width="90%" border="0" cellspacing="0" cellpadding="0" class="footer">
+                                <tr>
+                                    <td align="left" class="intouch-left" style="font-size:26px; line-height:36px; padding:0px 0px 0px 0px; margin:0px; color:#ffffff; font-weight:400;">
+                                        <multiline label="Description">Need help building your brand.</multiline>
+                                    </td>
+                                    <td align="center" class="intouch-right" style="">
+                                        <p><img width="126" style="width:126px; border:0px;" editable="true" src="./image/bt-getintouch.png" alt=""></p>
+                                        <p style="padding-top:15px;">
+                                            <img alt="facebook" src="./image/wm-text-share.png" style="display:inline-block; border:0px; padding-right:5px;" width="35" height="18">
+                                            <fblike><img alt="facebook" src="./image/icon-fb-w.png" style="display:inline-block; border:0px;" width="19" height="18"></fblike>
+                                            <tweet><img alt="twitter" src="./image/icon-tw-w.png" style="display:inline-block; border:0px;" width="18" height="18"></tweet>
+                                            <a href="https://plus.google.com/115841863011008557128/about" style="text-decoration:none;" title="googleplus"><img alt="googleplus" src="./image/icon-gl-w.png" style="display:inline-block; border:0px; padding-right:5px;" width="19" height="18"></a>
+                                   		</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </layout>
+                    <!--END INNER TEXT-->
+                    <!--END TEXT-->
+                    <!--END CONTENT-->
+                    <!--FOOTER-->
+                    <layout label='Footer Copyright'>
+                    <tr>
+                        <td height="123" align="center" valign="middle" bgcolor="#222529">
+                            <table width="90%" border="0" cellspacing="0" cellpadding="0" class="footer">
+                                <tr>
+                                    <td align="left" valign="bottom" class="copyright" style="color:#ffffff;">
+                                    	<p style="padding-top:10px;"><a href="http://www.winningmedia.com.au/"><img style="display:block;" class="logo-img" src="./image/logo-footer.png" width="163"></a></p>
+                                        <p style="font-size:13px; line-height:13px; color:#58595b; font-weight:300; padding-top:25px; padding-bottom:4px;">STRATEGY // DESIGN // DIGITAL</p>
+                                    </td>
+                                    <td align="right" class="text" style="">
+                                    	P: <a style="text-decoration:none;" href="tel:07 3216 0220">+61 7 3216 0220</a><br/>
+                                        Level 1, 273 Water St Fortitude Valley<br/>
+                                        Brisbane, QLD 4006<br/>
+                                        <a style="text-decoration:none;" href="http://www.winningmedia.com.au/">www.winningmedia.com.au</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="footer">
+                        <td align="center" valign="middle">
+                            <table width="90%" border="0" cellspacing="0" cellpadding="0" class="footer">
+                                <tr>
+                                	<td align="center" class="text" style="font-size:12px; line-height:18px; padding:30px 0px 10px 0px;margin:0px;"><multiline label="Copyright: Description">This email was sent to [email]. You are receiving this email because you either opted in via our website, you are a valued client, supplier or friend. </multiline></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </layout>
+                    <!--END FOOTER-->
+                    </repeater>
+                    <tr id="footer">
+                        <td align="center" valign="middle">
+                            <table width="90%" border="0" cellspacing="0" cellpadding="0" class="footer">
+                                <tr>
+                                    <td align="center" class="text" style="font-size:12px; line-height:18px; padding:10px 0px 10px 0px;margin:0px;">
+                                    	<forwardtoafriend>Forward this to a friend</forwardtoafriend> | <unsubscribe>Unsubscribe</unsubscribe>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
